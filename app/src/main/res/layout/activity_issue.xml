@@ -19,7 +19,7 @@
             android:layout_weight="0.2"
             android:background="#d09aff"
             android:paddingHorizontal="5dp"
-            android:text="secret" />
+            android:text="이름" />
 
         <TextView
             android:id="@+id/txt_issue_secret"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.8"
             android:paddingHorizontal="5dp"
-            android:text="get secret" />
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,7 +42,7 @@
             android:layout_weight="0.2"
             android:background="#d09aff"
             android:paddingHorizontal="5dp"
-            android:text="offer" />
+            android:text="생년월일" />
 
         <TextView
             android:id="@+id/txt_issue_offer"
@@ -66,7 +66,7 @@
             android:layout_weight="0.2"
             android:background="#d09aff"
             android:paddingHorizontal="5dp"
-            android:text="credReq" />
+            android:text="날짜" />
 
         <TextView
             android:id="@+id/txt_issue_credReq"
@@ -75,7 +75,7 @@
             android:layout_weight="0.8"
             android:maxLines="10"
             android:paddingHorizontal="5dp"
-            android:text="create credential request" />
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -90,7 +90,7 @@
             android:layout_weight="0.2"
             android:background="#d09aff"
             android:paddingHorizontal="5dp"
-            android:text="issue" />
+            android:text="병명" />
 
         <TextView
             android:id="@+id/txt_issue"
@@ -114,7 +114,7 @@
             android:layout_weight="0.2"
             android:background="#d09aff"
             android:paddingHorizontal="5dp"
-            android:text="cred id" />
+            android:text="병원(이름)" />
 
         <TextView
             android:id="@+id/txt_issue_cred_id"
@@ -125,4 +125,30 @@
             android:paddingHorizontal="5dp"
             android:text="credential id (referent)" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="#d09aff"
+            android:paddingHorizontal="5dp"
+            android:text="병원(주소)" />
+
+        <TextView
+            android:id="@+id/txt_issue_cred_id1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:maxLines="10"
+            android:paddingHorizontal="5dp"
+            android:text="credential id (referent)" />
+    </LinearLayout>
+
+
 </LinearLayout>

@@ -7,46 +7,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="313dp"
-        android:src="@drawable/hospital" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="100"
-        android:accessibilityHeading="false"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="병원"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        android:visibility="visible" />
+        android:text="Hello, DID Holder!" />
 
     <Button
         android:id="@+id/btn_issue_test_cred"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="진료확인서"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:text="테스트 증명서 발급" />
 
     <Button
-        android:id="@+id/btn_nav_to_cred_list1"
+        android:id="@+id/btn_nav_to_cred_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="병원 이용내역"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btn_nav_to_cred_list2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="처방전"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
+        android:text="증명서 목록 조회" />
 </LinearLayout>
