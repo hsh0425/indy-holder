@@ -29,8 +29,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btnIssueTest = findViewById(R.id.btn_issue_test_cred);
-        Button btnNavToCredList = findViewById(R.id.btn_nav_to_cred_list);
+        Button btnNavToCredList1 = findViewById(R.id.btn_nav_to_cred_list1);
+        Button btnNavToCredList2 = findViewById(R.id.btn_nav_to_cred_list2);
         btnIssueTest.setOnClickListener(onStartDeeplink);
-        btnNavToCredList.setOnClickListener(onNavToCredList);
+        btnNavToCredList1.setOnClickListener(onNavToCredList);
+        btnNavToCredList2.setOnClickListener(onNavToCredList);
     }
 }
