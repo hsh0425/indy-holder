@@ -17,7 +17,7 @@ public class CredentialActivity extends AppCompatActivity {
         setContentView(R.layout.activity_credential);
         ActionBar appBar = getSupportActionBar();
         if (appBar != null) {
-            appBar.setTitle("증명서 상세");
+            appBar.setTitle("증명서 d상세");
             appBar.setDisplayHomeAsUpEnabled(true);
         }
     }
