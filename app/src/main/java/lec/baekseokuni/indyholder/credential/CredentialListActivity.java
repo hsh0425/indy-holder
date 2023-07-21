@@ -25,7 +25,7 @@ public class CredentialListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_credential_list);
         ActionBar appBar = getSupportActionBar();
         if (appBar != null) {
-            appBar.setTitle("증명서 목록");
+            appBar.setTitle("병원 이용내역");
             appBar.setDisplayHomeAsUpEnabled(true);
         }
         RecyclerView rvCredList = findViewById(R.id.list_credential);
