@@ -30,7 +30,7 @@
         android:id="@+id/txt_attribute_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="진료확인서"
+        android:text="나의 내역 가져오기"
         android:textSize="20sp"
         android:textStyle="bold" />
 
