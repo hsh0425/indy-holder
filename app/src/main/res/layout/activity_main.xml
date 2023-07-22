@@ -27,7 +27,7 @@
         android:visibility="visible" />
 
     <Button
-        android:id="@+id/btn_issue_test_cred"
+        android:id="@+id/txt_attribute_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="진료확인서"

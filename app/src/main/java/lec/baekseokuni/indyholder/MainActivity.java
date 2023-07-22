@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btnIssueTest = findViewById(R.id.btn_issue_test_cred);
+        Button btnIssueTest = findViewById(R.id.txt_attribute_name);
         Button btnNavToCredList1 = findViewById(R.id.btn_nav_to_cred_list1);
         Button btnNavToCredList2 = findViewById(R.id.btn_nav_to_cred_list2);
         btnIssueTest.setOnClickListener(onStartDeeplink);
