@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 
 import kr.co.bdgen.indywrapper.data.Credential;
@@ -40,9 +41,17 @@ public class CredentialRecyclerViewAdapter extends RecyclerView.Adapter<Credenti
                 return;
             onDeleteCred.accept(credData);
         });
-        holder.binding.txtCredId.setText(credData.getId());
-        holder.binding.txtSchemaId.setText(credData.getSchemaId());
-        holder.binding.txtCredDefId.setText(credData.getCredDefId());
+        Map<String, String> attrs = credData.getAttrs();
+        String name = attrs.get("name");
+        String hospital = attrs.get("hospital");
+        String time = attrs.get("time");
+        String rrn = attrs.get("rrn");
+        String disease = attrs.get("disease");
+        holder.binding.txtName.setText(name);   //사람 이름
+        holder.binding.txtHospital.setText(hospital);     //병원명
+        holder.binding.txtTime.setText(time); //시간
+        holder.binding.txtRrn.setText(rrn);
+        holder.binding.txtDisease.setText(disease);
     }
 
     @Override

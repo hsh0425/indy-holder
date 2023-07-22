@@ -15,7 +15,7 @@ import lec.baekseokuni.indyholder.verification.VerificationActivity;
 
 public class MainActivity extends AppCompatActivity {
     View.OnClickListener onStartDeeplink = v -> {
-        String testDeeplink = "indy://holder?secret=test1";
+        String testDeeplink = "indy://holder?secret=vStdXgKJNb";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(testDeeplink));
         startActivity(intent);
         finish();
@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     };
     View.OnClickListener onNavToVerify = v -> {
-        Intent intent = new Intent(getApplicationContext(), VerificationActivity.class);
+        String verificationUrl = "indy://verify?schemaId=EtAGQxkwjMBgCkG4M6jXjP:2:medical-treatment-confirmation:1.1";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(verificationUrl));
         startActivity(intent);
     };
 
