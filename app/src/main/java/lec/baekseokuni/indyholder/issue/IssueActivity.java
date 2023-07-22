@@ -31,7 +31,7 @@ public class IssueActivity extends AppCompatActivity {
         setContentView(R.layout.activity_issue);
         ActionBar appBar = getSupportActionBar();
         if (appBar != null) {
-            appBar.setTitle("증명서 발급");
+            appBar.setTitle("진료확인서 발급");
             appBar.setDisplayHomeAsUpEnabled(true);
         }
 
@@ -88,10 +88,10 @@ public class IssueActivity extends AppCompatActivity {
                         storeCredential(credentialInfo, issuePayload);
                     };
                     AlertDialog.Builder alert = new AlertDialog.Builder(this)
-                            .setTitle("증명설 발급")
+                            .setTitle("진료확인서 발급")
                             .setCancelable(false)
-                            .setMessage("발급한 증명서를 저장하시겠습니까?")
-                            .setPositiveButton("증명서 저장", onClickPositive)
+                            .setMessage("발급한 진료확인서를 저장하시겠습니까?")
+                            .setPositiveButton("저장", onClickPositive)
                             .setNegativeButton("취소", null);
                     runOnUiThread(() -> {
                         TextView txtCredReq = findViewById(R.id.txt_issue_credReq);
