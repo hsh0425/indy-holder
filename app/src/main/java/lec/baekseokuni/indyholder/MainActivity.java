@@ -11,6 +11,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import lec.baekseokuni.indyholder.credential.CredentialListActivity;
+import lec.baekseokuni.indyholder.verification.VerificationActivity;
 
 public class MainActivity extends AppCompatActivity {
     View.OnClickListener onStartDeeplink = v -> {
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), CredentialListActivity.class);
         startActivity(intent);
     };
+    View.OnClickListener onNavToVerify = v -> {
+        Intent intent = new Intent(getApplicationContext(), VerificationActivity.class);
+        startActivity(intent);
+    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +38,6 @@ public class MainActivity extends AppCompatActivity {
         Button btnNavToCredList2 = findViewById(R.id.btn_nav_to_cred_list2);
         btnIssueTest.setOnClickListener(onStartDeeplink);
         btnNavToCredList1.setOnClickListener(onNavToCredList);
-        btnNavToCredList2.setOnClickListener(onNavToCredList);
+        btnNavToCredList2.setOnClickListener(onNavToVerify);
     }
 }
